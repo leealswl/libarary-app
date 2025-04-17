@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import {Outlet} from 'react-router-dom'; //라우터 안에있는 자손들 가져옴
 import './Applayout.style.css'
 
 
