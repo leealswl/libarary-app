@@ -1,0 +1,10 @@
+.me-auto {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.main-nav{
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

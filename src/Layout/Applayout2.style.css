@@ -1,0 +1,11 @@
+.nav2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    color:bisque
+    
+}
+.main-nav-bg {
+    background-color: rgb(17, 48, 10);
+    }
+

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Routes,Route} from 'react-router-dom';
+import Applayout from './Layout/Applayout';
+import Homepage from './page/Hompage/Homepage';
+import Login from './page/Login/Login';
+import { useEffect, useState } from 'react';
+
+
 
 function App() {
+
+  const [authenticate, setAuthenticate] = useState(false);
+  
+  useEffect(() => {
+  }, [authenticate]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Applayout/>}/>
+        <Route index element={<Homepage />}/>
+        <Route path="/login" element={<Login setAuthenticate={setAuthenticate} />} />
+      </Routes>
     </div>
   );
 }
